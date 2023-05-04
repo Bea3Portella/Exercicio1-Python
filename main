@@ -1,0 +1,17 @@
+want_to_continue = count = bigger = sum = media = max = min = 0
+while want_to_continue != 'n':
+    count += 1
+    number = int(input('Digite um número: '))
+    want_to_continue = str(input('Quer continuar?  [S/N] '))
+    add1 = number
+    sum = sum + number
+    media = sum/count
+    if count == 1:
+        max = min = number
+    else:
+        if number > max:
+            max = number
+        if number < min:
+            min = number
+print('Você digitou {} números e a média foi {}'.format(count, media))
+print('O maior valor foi {} e o menor foi {}'.format(max, min))
